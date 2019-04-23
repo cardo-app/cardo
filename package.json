@@ -2,8 +2,8 @@
   "name": "cardo",
   "version": "0.1.0",
   "private": true,
-  "server":"http://localhost:1337",
   "main": "server/server.js",
+  "proxy": "http://localhost:1337",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
