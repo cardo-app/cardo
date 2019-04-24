@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Hobe</router-link> |
-      <router-link to="/create">Creat</router-link> |
-      <router-link to="/join">joid</router-link> |
+      <router-link to="/">Hobe</router-link>|
+      <router-link to="/create">Creat</router-link>|
+      <router-link to="/join">joid</router-link>|
       <router-link to="/game">gabe</router-link>
     </div>
     <router-view/>
@@ -11,8 +11,11 @@
 </template>
 
 <style lang="scss">
+body {
+  background: #f0edee;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
