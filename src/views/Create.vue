@@ -2,6 +2,7 @@
   <div>
     <h1>Create</h1>
     <div>
+      <DropDown :games="games" />
       <h4>Game Type</h4>
       <select name="gameType">
         <option value="golf">Golf</option>
@@ -139,7 +140,23 @@
 </template>
 
 <script>
-export default {};
+import DropDown from '../components/DropDown.vue'
+export default {
+  name: "Create",
+  components: {
+    DropDown
+  },
+  data(){
+    return {
+      games: [
+        "6 Card Golf"
+      ]
+    }
+  },
+  methods: {
+
+  }
+};
 </script>
 
 <style lang="scss" scoped>
