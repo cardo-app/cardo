@@ -143,16 +143,30 @@
 import DropDown from '../components/DropDown.vue'
 export default {
   name: "Create",
+
   components: {
     DropDown
   },
+
   data(){
-    return {
-      games: [
-        "6 Card Golf"
-      ]
+    return{
+      games: ["6 Card Golf","test","testy","testyTest"],
+      test: 1
+    }
+    
+  },
+
+  computed: {
+    selected:{ 
+      get: function(){
+      return this.games.findIndex(val => val ==="test")
+      },
+      set: function(game){
+        return this.games.findIndex('test')
+      }
     }
   },
+
   methods: {
 
   }
